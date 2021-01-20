@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie-edge">
+    <title>turismo antioquia</title>
+</head>
+<body background="imagenes/turismo.jpg">
+     <form>
+           <table  align="center">
+                <caption>Planes de turismo</caption>
+                <tr>
+                    <td>identificación</td>
+                    <td>
+                        <input  type="text" name="txtident" id="txtident" 
+                        autofocus minlength="5" maxlength="15" size="15"
+                        required pattern="[0-9]+" 
+                        title="Ingrese solo numeros (minimo 5, maximo 15)"
+                        placeholder="ingrese identificacion" autocomplete="off"
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nombres</td>
+                    <td>
+                        <input type="text" name="txtnombres" id="txtnombres" required 
+                        placeholder="Ingrese nombres" minlength="2" maxlength="50" size="50"
+                        pattern="[Á-ZÑá-zñ  ]+" title="Debe Ingresar solo letras y/o espacio (s)"
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>Correo Electronico</td>
+                    <td>
+                        <input type="email" name="txtemail" id="txtemail" required>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>Destino</td>
+                    <td>
+                        <select name="cmdestino" id="cmdestino">
+                            <option value="ng" disabled selected>selecione un destino</option>
+                            <option value="cg">cartagena</option>
+                            <option value="sa">san andres</option>
+                            <option value="sn">santa marta</option>
+                            <option value="cp">capurgana</option>
+                        </select>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                        <input type="submit" name="btnguardar" id="btnguardar" value="Guardar">
+                    </td>
+                </tr>
+           </table>
+     </form>
+</body>
+</html>
